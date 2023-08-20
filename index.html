@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AI DJ WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+  
+ 
+</head>
+<body background="https://www.bing.com/ck/a?!&&p=d986d77c613edf2eJmltdHM9MTY5MjQ4OTYwMCZpZ3VpZD0xMjZmN2ZiYS1jNjc5LTY4OWYtMDM0NS02Y2U3YzdhYzY5MWQmaW5zaWQ9NTY1Nw&ptn=3&hsh=3&fclid=126f7fba-c679-689f-0345-6ce7c7ac691d&u=a1L2ltYWdlcy9zZWFyY2g_cT1tdXNpY2FsIGluc3RydW1lbnRzIGltYWdlcyZGT1JNPUlRRlJCQSZpZD01Mjc1NEM5Q0RFMjVCNjJCQ0UzMzFDNTIzRjgyRDg3RjM4QzMyNTND&ntb=1">
+<center>
+  	<h3 class="btn btn-warning heading">AI DJ WEB APP
+	    <br>
+	    <span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume
+			 Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+  	</h3>
+
+	<div class="div_speed">
+		<img src="https://www.bing.com/th/id/OGC.3d905bb0be31d56c3f1da8a141cddccc?pid=1.7&rurl=https%3a%2f%2f3.bp.blogspot.com%2f-LqIu6ED0w5Y%2fWZFZLGtgjWI%2fAAAAAAAAAOs%2fqpDue1QS21YdsBjbTFx91q_ik_Rd1Jc-wCLcBGAs%2fs1600%2ftumblr_onn734q6Rv1ue08b9o1_500.gif&ehk=yGMx5Jqp5C3YNBdx3H2mToaGFLKUHgGBD6z7ffi8cxs%3d" class="div_speed_img">
+		<br>
+		<h3 class="btn btn-danger" id="speed">Speed</h3>
+	</div>
+
+	<div class="div_volume">
+		<img src="https://www.bing.com/th/id/OGC.3d905bb0be31d56c3f1da8a141cddccc?pid=1.7&rurl=https%3a%2f%2f3.bp.blogspot.com%2f-LqIu6ED0w5Y%2fWZFZLGtgjWI%2fAAAAAAAAAOs%2fqpDue1QS21YdsBjbTFx91q_ik_Rd1Jc-wCLcBGAs%2fs1600%2ftumblr_onn734q6Rv1ue08b9o1_500.gif&ehk=yGMx5Jqp5C3YNBdx3H2mToaGFLKUHgGBD6z7ffi8cxs%3d" class="div_volume_img">
+		<br>
+		<h3 class="btn btn-danger" id="volume">Volume</h3>
+	</div>
+
+	<br><br>
+
+	<button onclick="play();" class="btn btn-success play_button">Play</button>
+
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>
